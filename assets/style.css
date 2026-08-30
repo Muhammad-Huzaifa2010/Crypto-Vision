@@ -1,0 +1,314 @@
+/* ================================
+   CRYPTOVISION THEME
+   ================================ */
+
+:root {
+    --bg: #0f0f0f;
+    --sidebar: #000000;
+    --card: #181D25;
+    --border: #2B3139;
+
+    --gold: #F0B90B;
+    --gold-light: #FFD166;
+
+    --text: #F5F7FA;
+    --text-secondary: #B7BDC6;
+    --muted: #848E9C;
+
+    --green: #0ECB81;
+    --red: #F6465D;
+}
+
+
+/* ================================
+   MAIN APP
+   ================================ */
+
+.stApp {
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+.main .block-container {
+    max-width: 1400px;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+
+/* ================================
+   SIDEBAR
+   ================================ */
+
+[data-testid="stSidebar"] {
+    background-color: var(--sidebar);
+    border-right: 1px solid var(--border);
+}
+
+[data-testid="stSidebar"] p,
+[data-testid="stSidebar"] span,
+[data-testid="stSidebar"] label {
+    color: var(--text);
+}
+
+
+/* Sidebar buttons */
+
+[data-testid="stSidebar"] button {
+    background-color: transparent;
+    color: var(--text-secondary);
+    border: none;
+    border-radius: 10px;
+    transition: 0.2s ease;
+}
+
+[data-testid="stSidebar"] button:hover {
+    background-color: var(--card);
+    color: var(--gold);
+}
+
+
+/* ================================
+   HEADINGS
+   ================================ */
+
+h1 {
+    color: var(--gold) !important;
+    font-weight: 700;
+}
+
+h2 {
+    color: var(--text) !important;
+    font-weight: 650;
+}
+
+h3 {
+    color: var(--gold) !important;
+    font-weight: 600;
+}
+
+p {
+    color: var(--text-secondary);
+}
+
+
+/* ================================
+   DIVIDER
+   ================================ */
+
+hr {
+    border-color: var(--border) !important;
+}
+
+
+/* ================================
+   METRIC CARDS
+   ================================ */
+
+[data-testid="stMetric"] {
+    background-color: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px;
+    transition: 0.2s ease;
+}
+
+[data-testid="stMetric"]:hover {
+    border-color: var(--gold);
+    transform: translateY(-2px);
+}
+
+[data-testid="stMetricLabel"] {
+    color: var(--muted) !important;
+}
+
+[data-testid="stMetricValue"] {
+    color: var(--text) !important;
+    font-weight: 700;
+}
+
+
+/* ================================
+   BUTTONS
+   ================================ */
+
+.stButton > button {
+    background-color: var(--card);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.stButton > button:hover {
+    background-color: var(--gold);
+    color: var(--bg);
+    border-color: var(--gold);
+}
+
+
+/* ================================
+   TEXT INPUT
+   ================================ */
+
+[data-testid="stTextInput"] input {
+    background-color: var(--card);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+}
+
+[data-testid="stTextInput"] input:focus {
+    border-color: var(--gold);
+    box-shadow: 0 0 0 1px var(--gold);
+}
+
+[data-testid="stTextInput"] input::placeholder {
+    color: var(--muted);
+}
+
+
+/* ================================
+   SELECTBOX
+   ================================ */
+
+[data-testid="stSelectbox"] div[data-baseweb="select"] > div {
+    background-color: var(--card);
+    border-color: var(--border);
+    border-radius: 10px;
+    color: var(--text);
+}
+
+
+/* ================================
+   DATAFRAME
+   ================================ */
+
+[data-testid="stDataFrame"] {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+
+/* ================================
+   TABS
+   ================================ */
+
+.stTabs [data-baseweb="tab-list"] {
+    gap: 8px;
+    background-color: transparent;
+}
+
+.stTabs [data-baseweb="tab"] {
+    color: var(--muted);
+    border-radius: 8px;
+}
+
+.stTabs [data-baseweb="tab"]:hover {
+    color: var(--gold);
+}
+
+.stTabs [aria-selected="true"] {
+    color: var(--gold) !important;
+    border-bottom: 2px solid var(--gold);
+}
+
+
+/* ================================
+   EXPANDER
+   ================================ */
+
+[data-testid="stExpander"] {
+    background-color: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+}
+
+
+/* ================================
+   LINKS
+   ================================ */
+
+a {
+    color: var(--gold) !important;
+}
+
+a:hover {
+    color: var(--gold-light) !important;
+}
+
+
+/* ================================
+   HEADER
+   ================================ */
+
+header[data-testid="stHeader"] {
+    background-color: var(--bg);
+}
+
+
+/* ================================
+   SCROLLBAR
+   ================================ */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--border);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--gold);
+}
+
+
+/* ================================
+   CUSTOM CRYPTO COLORS
+   ================================ */
+
+.crypto-gold {
+    color: var(--gold);
+}
+
+.crypto-white {
+    color: var(--text);
+}
+
+.crypto-muted {
+    color: var(--muted);
+}
+
+.crypto-green {
+    color: var(--green);
+}
+
+.crypto-red {
+    color: var(--red);
+}
+
+
+/* ================================
+   CUSTOM CARD
+   ================================ */
+
+.crypto-card {
+    background-color: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px;
+    transition: 0.2s ease;
+}
+
+.crypto-card:hover {
+    border-color: var(--gold);
+    transform: translateY(-2px);
+}

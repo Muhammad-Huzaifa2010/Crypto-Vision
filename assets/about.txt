@@ -1,0 +1,35 @@
+# About CryptoVision 🚀
+
+**CryptoVision** is a modern cryptocurrency market dashboard designed to make crypto market data simple, clear, and easy to understand.
+
+The application provides real-time cryptocurrency market information such as **prices, market capitalization, 24-hour price changes, market performance, and interactive charts**. Users can explore popular cryptocurrencies and analyze their market movements through a clean and user-friendly dashboard.
+
+## 🎯 Our Goal
+
+The goal of CryptoVision is to provide an easy-to-use platform for exploring cryptocurrency market data without making the information unnecessarily complicated.
+
+## ✨ Features
+
+* 📊 Cryptocurrency market overview
+* 💰 Current coin prices
+* 📈 Interactive price charts
+* 📉 Market performance analysis
+* 💎 Market capitalization data
+* 🔄 24-hour price changes
+* 🌐 Cryptocurrency market statistics
+* 📱 Clean and responsive dashboard
+
+## 🛠️ Technologies Used
+
+* **Python**
+* **Streamlit**
+* **Pandas**
+* **Plotly**
+* **CoinGecko API**
+* **HTML & CSS**
+
+## 📌 Project
+
+CryptoVision is a learning and portfolio project focused on combining **Python, APIs, data analysis, and interactive dashboards** into a practical application.
+
+**Built with Python ❤️**
